@@ -76,24 +76,6 @@ a {
   -webkit-text-decoration-skip: objects; /* 2 */
 }
 
-/**
- * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
- */
-
-b,
-strong {
-  font-weight: inherit;
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-
-b,
-strong {
-  font-weight: bolder;
-}
-
 /* Embedded content
    ========================================================================== */
 
@@ -198,15 +180,4 @@ button:-moz-focusring,
 
 textarea {
   overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10-.
- * 2. Remove the padding in IE 10-.
- */
-
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
 }

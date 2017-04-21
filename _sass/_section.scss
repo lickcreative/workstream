@@ -26,24 +26,19 @@
   }
   &__title {
     position: relative;
-    text-align: left;
-    // line-height: 1;
-    // Create the little gold divider
+    // Space out any following paragraphs
     & + p {
       margin-top: $space-lg;
     }
+    // Create the little gold divider
     &:after {
       content: '';
       position: absolute;
       left: 0;
-      // Get it the right distance from the title
       bottom: ($space-md * -0.7);
       width: $space-lg;
       height: 5px;
       background-color: $primary;
     }
-  }
-  &__copy {
-    text-align: left;
   }
 }
