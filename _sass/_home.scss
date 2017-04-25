@@ -2,8 +2,12 @@
   position: relative;
   min-height: 50em;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   color: $text-light;
   background-color: $bg-dark;
@@ -38,7 +42,8 @@
     width: 100%;
     stroke: currentColor;
     &--bounce {
-      animation: bounce 0.75s ease alternate infinite both;
+      -webkit-animation: bounce 0.75s ease alternate infinite both;
+              animation: bounce 0.75s ease alternate infinite both;
     }
   }
   &::before {
@@ -49,12 +54,19 @@
     width: 100%;
     height: 100%;
     background-color: rgba((lighten($secondary, 10%)), 0.1);
+    background: -webkit-linear-gradient(
+      right,
+      lighten($secondary, 5%),
+      rgba($secondary, 0)
+    );
     background: linear-gradient(
       to left,
       lighten($secondary, 5%),
       rgba($secondary, 0)
     );
-    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+            transform: rotate(-15deg);
     z-index: 0;
   }
   &::after {
@@ -65,16 +77,28 @@
     width: 45%;
     height: 90%;
     background-color: rgba((lighten($secondary, 8%)), 0.05);
+    background: -webkit-radial-gradient(
+      bottom right,
+      circle,
+      lighten($secondary, 3%),
+      rgba($secondary, 0) 30%
+    );
     background: radial-gradient(
       circle at bottom right,
       lighten($secondary, 3%),
       rgba($secondary, 0) 30%
     );
-    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+            transform: rotate(-15deg);
     z-index: 0;
   }
 }
 
+@-webkit-keyframes bounce {
+  to { -webkit-transform: translate3d(0, -0.5em, 0); transform: translate3d(0, -0.5em, 0) }
+}
+
 @keyframes bounce {
-  to { transform: translate3d(0, -0.5em, 0) }
+  to { -webkit-transform: translate3d(0, -0.5em, 0); transform: translate3d(0, -0.5em, 0) }
 }

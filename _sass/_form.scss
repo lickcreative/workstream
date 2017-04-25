@@ -1,8 +1,5 @@
 .form {
   margin-top: $space-md;
-  & > * + * {
-    // margin-top: $space-sm;
-  }
   &__input {
     display: block;
     width: 100%;
@@ -24,6 +21,12 @@
     text-transform: uppercase;
     color: $white;
     background-color: $secondary;
+    background-image: -webkit-linear-gradient(
+      top,
+      lighten($secondary, 5%) 5%,
+      lighten($secondary, 10%),
+      $secondary 99%
+    );
     background-image: linear-gradient(
       to bottom,
       lighten($secondary, 5%) 5%,
@@ -34,6 +37,12 @@
     border-radius: 20px;
     cursor: pointer;
     &:hover {
+      background-image: -webkit-linear-gradient(
+        top,
+        lighten($secondary, 12%) 5%,
+        lighten($secondary, 17%),
+        lighten($secondary, 2%) 99%
+      );
       background-image: linear-gradient(
         to bottom,
         lighten($secondary, 12%) 5%,
