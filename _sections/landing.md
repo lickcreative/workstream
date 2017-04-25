@@ -7,6 +7,6 @@ brand_image: uploads/brandmark.svg
 brand_image_alt: The Workstream X logo
 ---
 
-Campaign management has never been this seamless. Store profiling, allocation management, content creation, asset management, in store ordering, artwork approval, stock management and delivery tracking, all in one interconnected portal.
+10 years after the first line of code was written on Workstream, we've developed another groundbreaking step forward.
 
-You'll be astounded at what you can do.
+Say hello to Workstream X.
