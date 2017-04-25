@@ -30,13 +30,12 @@ defaults:
     video: ''
     video_alt: ''
     position: 
-email: your-email@domain.com
-description: 'Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for Google search
-  results) and in your feed.xml site description.
-
-'
-url: 
+email: contact@workstreamx.com
+description: Workstream X is the new standard in campaign management systems. Store
+  profiling, allocation management, content creation, asset management, in store ordering,
+  artwork approval, stock management and delivery tracking, all in one interconnected
+  portal.
+url: workstreamx.com
 google_analytics: UA-24138326-8
 scroll_speed: 400
 sass:
